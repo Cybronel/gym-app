@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Template</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            width: 375px;
+            height: 667px;
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (min-width: 450px) {
+            .content {
+                width: 375px;
+                background-color: black;
+                margin: 0 auto;
+                border-radius: 10px;
+            }
+
+            body {
+                margin: 50px 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+         <form>
+            <h1>Register</h1>
+            <div class="input-container">
+                <label>Username:</label>
+                <input type="text" placeholder="username">
+            </div>
+            <div class="input-container">
+                <label>Password:</label>
+                <input type="password" placeholder="password">
+            </div>
+            <div class="input-container">
+                <label>Repeat password:</label>
+                <input type="text" placeholder="password">
+            </div>
+            <button>
+                <p>Submit</p>
+            </button>
+         </form>
+         <p class="redirect">Log in <a href="/login">here</a></p>
+    </div>
+</body>
+</html>

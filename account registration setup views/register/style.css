@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif ;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --red: #DE2B2B;
+    --white: #FFFFFF;
+    --black:  #000000;
+    --green: #82E137;
+
+    /* box-shadow: */
+    --shadow: 3px 4px 0px 0px rgba(0,0,0,0.35);
+}
+
+h1 {
+    margin: 0;
+}
+
+p { 
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+label {
+    font-size: 1.05rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.content {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: var(--white);
+    height: 390px;
+    width: 240px;
+    border-radius: 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.input-container {
+    position: relative;
+    height: 45px;
+
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.input-container::after {
+    content: '';
+    position: absolute;
+    background-color: var(--black);
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+}
+
+input:active,
+input:focus {
+    outline: none;
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--red);
+    width: 120px;
+    height: 40px;
+    transition: .1s ease;
+}
+
+button:hover {
+    transform: scale(103%);
+}
+
+button:active {
+    outline: none;
+}
+
+button > p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.redirect {
+    position: absolute;
+    bottom: 20px;
+}
+
+a {
+    color: var(--white);
+}
