@@ -4,22 +4,16 @@ const radioTags = document.querySelectorAll('.sex > input')
 const selectTags = document.querySelectorAll('select') 
 const lables = document.querySelectorAll('h2')
 const radioLabels =  document.querySelectorAll('.form-label')
-
 const continueBtn = document.getElementById('continue')
 const calcBtn = document.getElementById('calc')
-
 const weightUnit = document.getElementById('weight-unit')
 const heightUnit = document.getElementById('height-unit')
-
 const maleOption = document.getElementById('male')
 const femaleOption = document.getElementById('female')
-
 const ageNum = document.getElementById('age')
 const weightNum = document.getElementById('weight')
 const heightNum = document.getElementById('height')
-
 const result = document.getElementById('result')
-
 const alert = document.querySelector('.alert')
 const exitAlert = document.querySelector('.exit-alert')
 
@@ -93,5 +87,17 @@ calcBtn.addEventListener('click', () => {
 
 exitAlert.addEventListener('click', () => {
     alert.style.display = 'none'
+})
+
+// Doesn't allow negative values
+
+inputTags.forEach(input => {
+    input.onkeydown = function(e) {
+        if(!((e.keyCode > 95 && e.keyCode < 106)
+          || (e.keyCode > 47 && e.keyCode < 58) 
+          || e.keyCode == 8)) {
+            return false;
+        }
+    }
 })
 
