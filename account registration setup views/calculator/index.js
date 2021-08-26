@@ -79,7 +79,7 @@ calcBtn.addEventListener('click', () => {
         alert.style.display = 'flex'
     } else {
         calcCalories(weightNum.value, heightNum.value, ageNum.value) === undefined ? result.innerHTML = '-' : result.innerHTML = calcCalories(weightNum.value, heightNum.value, ageNum.value)
-     
+      
         continueBtn.disabled = false
         continueBtn.classList.remove('disabled')
     }

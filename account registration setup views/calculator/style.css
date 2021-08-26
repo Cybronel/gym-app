@@ -108,6 +108,10 @@ button {
     width: 40%
 }
 
+#continue {
+    width: 60%;
+}
+
 .result-container {
     width: 65%;
     height: 10%;
