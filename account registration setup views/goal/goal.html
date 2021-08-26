@@ -22,9 +22,9 @@
         @media (min-width: 450px) {
             .content {
                 width: 375px;
-                background-color: black;
+                border: 3px solid black;
                 margin: 0 auto;
-                border-radius: 10px;
+                border-radius: 25px;
                 height: 667px;
             }
 
@@ -37,7 +37,32 @@
 </head>
 <body>
     <div class="content">
-        
+        <h1>Choose your goal:</h1>
+        <div class="goal lose-weight">
+            <img src="assets/chevron_right.svg" alt="arrow" class="arrow">
+            <h2>Lose weight</h2>
+            <div class="active-display">
+                <p>Losing weight means eating less calories than your <strong>maintenace calories</strong>. In addition, <strong>cardio</strong> is a great way of burning calories in order to lose weight.</p>
+                <button>This is what I'm looking for.</button>
+            </div>
+        </div>
+        <div class="goal active build-muscle">
+            <img src="assets/chevron_right.svg" alt="arrow" class="arrow">
+            <h2>Build muscle</h2>
+            <div class="active-display">
+                <p>Losing weight means eating less calories than your <strong>maintenace calories</strong>. In addition, <strong>cardio</strong> is a great way of burning calories in order to lose weight.</p>
+                <button>This is what I'm looking for.</button>
+            </div>
+        </div>
+        <div class="goal custom">
+            <img src="assets/chevron_right.svg" alt="arrow" class="arrow">
+            <h2>I know what I'm doing...</h2>
+            <div class="active-display">
+                <p>Losing weight means eating less calories than your <strong>maintenace calories</strong>. In addition, <strong>cardio</strong> is a great way of burning calories in order to lose weight.</p>
+                <button>This is what I'm looking for.</button>
+            </div>
+        </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
