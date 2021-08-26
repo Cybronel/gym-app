@@ -37,7 +37,53 @@
 </head>
 <body>
     <div class="content">
-        
+        <h1>Measurements:</h1>
+        <p class="desc">This step is crucial to determine your maintencance calories</p>
+        <div class="validation">
+            <input type="checkbox" id="valid">
+            <label>I don't want to track my calories</label>
+        </div>
+        <form>
+            <div class="age">
+                <h2>Age</h2>
+                <input type="number" class="number" id="age">
+                <label class="form-label">years</label>
+            </div>
+            <div class="sex">
+                <h2>Sex</h2>
+                <input type="radio" id="male" name="sex">
+                <label for="male" class="form-label">Male</label>
+                <input type="radio" id="female" name="sex">
+                <label for="female" class="form-label">Female</label>
+            </div>
+            <div class="height">
+                <h2>Height</h2>
+                <input type="number" class="number" id="height">
+                <select name="units" id="height-unit">
+                    <option value="cm">cm</option>
+                    <option value="inch">inch</option>
+                </select>
+            </div>
+            <div class="weight">
+                <h2>Weight</h2>
+                <input type="number" class="number" id="weight">
+                <select name="units" id="weight-unit">
+                    <option value="kg">kg</option>
+                    <option value="lbs">lbs</option>
+                </select>
+            </div>
+        </form>
+        <button id="calc">Calculate</button>
+        <div class="result-container">
+            <p id="result">-</p>
+            <p>kcal</p>
+        </div>
+        <button class="disabled" id="continue">Continue</button>
+        <div class="alert">
+            <h2 class="alert-title">You have to complete all fields!</h2>
+            <img src="assets/refresh.svg" alt="" class="exit-alert">
+        </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

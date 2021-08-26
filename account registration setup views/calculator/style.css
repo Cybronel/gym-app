@@ -10,7 +10,172 @@ body {
     --white: #FFFFFF;
     --black:  #000000;
     --green: #82E137;
-    
-    /* box-shadow: */
-    --shadow: 3px 4px 0px 0px rgba(0,0,0,0.35);
 }
+
+.content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin: 0;
+    text-align: center;
+}
+
+.desc {
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.content > form,
+.content > h1,
+.content > p,
+.validation {
+    width: 80%;
+}
+
+.validation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.validation > input {
+    width: 20px;
+    height: 20px;
+}
+
+.validation > label {
+    text-align: center;
+    font-weight: 900;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+form > div > h2 {
+    width: 10rem;
+    margin: 0;
+}
+
+input {
+    width: 2rem;
+    font-size: 1rem;
+    padding: 4px;
+}
+
+.number {
+    margin-right: 1rem;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+select {
+    padding: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 40%
+}
+
+.result-container {
+    width: 65%;
+    height: 10%;
+    border: 3px solid var(--black);
+    border-radius: 11px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#result {
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+}
+
+.alert {
+    width: 70%;
+    height: 20%;
+    background-color: var(--red);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.alert-title {
+    margin: 0;
+    font-size: 1.2rem;
+    width: 80%;
+    color: var(--white);
+    text-align: center;
+}
+
+.alert > img {
+    width: 30px;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+@media (max-width: 330px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .desc {
+        font-size: 0.9rem;
+    }
+    .validation > label {
+        font-size: 0.9rem;
+    }
+    form {
+        height: 22%;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
+
