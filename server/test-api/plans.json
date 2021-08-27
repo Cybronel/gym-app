@@ -1,56 +1,86 @@
 {
     "plans": [
         {
-            "id": "001",
-            "plan": "Upper Lower",
+            "id": "upper-lower",
+            "name": "Upper Lower",
             "workouts": [
                 {
-                    "id": "101",
                     "name": "Upper body workout",
-                    "exercises": {
-                        "1": "Bench press",
-                        "2": "Pull-ups",
-                        "3": "Biceps curls",
-                        "4": "Triceps extensions"
-                    }
+                    "exercises": [
+                        "Bench press",
+                        "Pull-ups",
+                        "Biceps curls",
+                        "Triceps extensions"
+                    ]
                 },
                 {
-                    "id": "102",
                     "name": "Lower body workout",
-                    "exercises": {
-                        "1": "Squats",
-                        "2": "Leg press",
-                        "3": "Leg curls",
-                        "4": "Leg extensions"
-                    }
+                    "exercises": [
+                        "Squats",
+                        "Leg press",
+                        "Leg curls",
+                        "Leg extensions"                        
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "upper-lower",
+            "name": "Upper Lower",
+            "workouts": [
+                {
+                    "name": "Upper body workout",
+                    "exercises": [
+                        "Bench press",
+                        "Pull-ups",
+                        "Biceps curls",
+                        "Triceps extensions"
+                    ]
+                },
+                {
+                    "name": "Lower body workout",
+                    "exercises": [
+                        "Squats",
+                        "Leg press",
+                        "Leg curls",
+                        "Leg extensions"                        
+                    ]
                 }
             ]
         },
         {   
-            "id": "002",
-            "plan": "Full body",
+            "id": "full-body",
+            "name": "Full body",
             "workouts": [
                 {
-                    "id": "201",
                     "name": "Full body workout",
-                    "exercises": {
-                        "1": "Bench press",
-                        "2": "Pull-ups",
-                        "3": "Biceps curls",
-                        "4": "Triceps extensions",
-                        "5": "Squats"
-                    }
+                    "exercises": [
+                        "Bench press",
+                        "Pull-ups",
+                        "Biceps curls",
+                        "Triceps extensions",
+                        "Squats"
+                    ]
                 },
                 {
-                    "id": "202",
                     "name": "Full body workout",
-                    "exercises": {
-                        "1": "Push-ups",
-                        "2": "BB Rows",
-                        "3": "Spider curls",
-                        "4": "Triceps extensions",
-                        "5": "Leg press"
-                    }
+                    "exercises": [
+                        "Push-ups",
+                        "BB Rows",
+                        "Spider curls",
+                        "Triceps extensions",
+                        "Leg press"
+                    ]
+                },
+                {
+                    "name": "Full body workout",
+                    "exercises": [
+                        "DB Bench press",
+                        "DB Rows",
+                        "Facepulls",
+                        "Skull-crushers",
+                        "Quad extensions"
+                    ]
                 }
             ]
         }
