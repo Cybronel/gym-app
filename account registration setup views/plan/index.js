@@ -3,6 +3,8 @@ const workoutArrows = document.querySelectorAll('.workout-arrow')
 const inputs = document.querySelectorAll('input')
 const continueButton = document.getElementById('continue')
 
+const URL = 'http://localhost:3000/plans'
+
 planArrows.forEach(arrow => {
     const children = Array.from(arrow.parentElement.parentElement.children);
     arrow.addEventListener('click' , e => {
@@ -44,6 +46,29 @@ inputs.forEach(input => {
         }
     })
 })
+
+// working with API to get plan data
+
+async function getData()  {
+    const response = await fetch(URL)
+    const data = await response.json()
+
+    return data
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+    let users = []
+
+    try {
+        users = await getData()
+    } catch (e) {
+        console.log('Error!')
+        console.log(e)
+    }
+
+    console.log(users.plans)
+})
+
 
 
 

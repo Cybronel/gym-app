@@ -164,17 +164,30 @@ h3 {
     .plan-name {
         font-size: 1.2rem;
     }
+    .workout-name {
+        font-size: 1rem;
+    }
     button {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 315px) {
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .workout-title {
+        height: 2rem;
+    }
+    .workout-arrow {
+        padding: 2px;
+        width: 18px;
+    }
     .plan-name {
         font-size: 1.1rem;
     }
     .workout-name {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .exercise {
         font-size: 1rem;
