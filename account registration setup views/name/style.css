@@ -14,3 +14,58 @@ body {
     /* box-shadow: */
     --shadow: 3px 4px 0px 0px rgba(0,0,0,0.35);
 }
+
+button {
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 25px;
+    width: 40%;
+    margin-bottom: 1rem;
+    position: absolute;
+
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    width: 80%;
+    font-weight: 600;
+}
+
+input {
+    width: 70%;
+    font-weight: 600;
+    border: none;
+    font-size: 2rem;
+    border-bottom: 5px solid var(--black);
+    position: relative;
+    margin-top: 6rem;
+}
+
+input:active,
+input:focus {
+    outline: none;
+}
+
+strong {
+    font-weight: 800;
+}
+
+
