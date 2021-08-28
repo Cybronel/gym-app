@@ -79,6 +79,8 @@ h2 {
     width: 90%;
     height: 26%;
     transition: transform .3s ease;
+
+    cursor: pointer;
 }
 
 .goal > img {
@@ -150,6 +152,8 @@ h2 {
     padding: 7px 18px;
     font-weight: 600;
     transition: .1s linear;
+
+    cursor: pointer;
 }
 
 .active-display > button:focus {
