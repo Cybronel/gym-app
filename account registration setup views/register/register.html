@@ -40,23 +40,22 @@
     <div class="content">
          <form>
             <h1>Register</h1>
-            <div class="input-container">
+            <div class="input-container username-container">
                 <label>Username:</label>
-                <input type="text" placeholder="username">
+                <input type="text" placeholder="username" id="username">
             </div>
             <div class="input-container">
                 <label>Password:</label>
-                <input type="password" placeholder="password">
+                <input type="password" placeholder="password" id="password">
             </div>
             <div class="input-container">
                 <label>Repeat password:</label>
-                <input type="text" placeholder="password">
+                <input type="text" placeholder="password" id="password-repeat">
             </div>
-            <button>
-                <p>Submit</p>
-            </button>
+            <button class="disabled" id="submit" type="button">Submit</button>
          </form>
          <p class="redirect">Log in <a href="/login">here</a></p>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
