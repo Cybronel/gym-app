@@ -26,34 +26,10 @@
         },
         {
             "id": "upper-lower",
-            "name": "Upper Lower",
-            "workouts": [
-                {
-                    "name": "Upper body workout",
-                    "exercises": [
-                        "Bench press",
-                        "Pull-ups",
-                        "Biceps curls",
-                        "Triceps extensions"
-                    ]
-                },
-                {
-                    "name": "Lower body workout",
-                    "exercises": [
-                        "Squats",
-                        "Leg press",
-                        "Leg curls",
-                        "Leg extensions"                        
-                    ]
-                }
-            ]
-        },
-        {   
-            "id": "full-body",
             "name": "Full body",
             "workouts": [
                 {
-                    "name": "Full body workout",
+                    "name": "Full body workout 1",
                     "exercises": [
                         "Bench press",
                         "Pull-ups",
@@ -63,7 +39,7 @@
                     ]
                 },
                 {
-                    "name": "Full body workout",
+                    "name": "Full body workout 2",
                     "exercises": [
                         "Push-ups",
                         "BB Rows",
@@ -71,15 +47,39 @@
                         "Triceps extensions",
                         "Leg press"
                     ]
+                }
+            ]
+        },
+        {   
+            "id": "full-body",
+            "name": "Push Pull Legs",
+            "workouts": [
+                {
+                    "name": "Push workout",
+                    "exercises": [
+                        "Bench press",
+                        "Shoulder DB Press",
+                        "Lateral raises",
+                        "Triceps extensions"
+                    ]
                 },
                 {
-                    "name": "Full body workout",
+                    "name": "Pull workout",
                     "exercises": [
-                        "DB Bench press",
-                        "DB Rows",
-                        "Facepulls",
-                        "Skull-crushers",
-                        "Quad extensions"
+                        "Push-ups",
+                        "BB Rows",
+                        "Spider curls",
+                        "Cable Pulldowns",
+                        "Deadlifts"
+                    ]
+                },
+                {
+                    "name": "Legs workout",
+                    "exercises": [
+                        "Squats",
+                        "Leg press",
+                        "Leg curls",
+                        "Leg extensions"    
                     ]
                 }
             ]
