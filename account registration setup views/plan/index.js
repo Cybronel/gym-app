@@ -1,5 +1,3 @@
-const twoWeekPrograms = document.querySelector('.plan-list-2')
-const threeWeekPrograms = document.querySelector('.plan-list-3')
 
 const URL = 'http://localhost:3000/plans'
 
@@ -15,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let fetchedPlans = []
 
     try {
-        fetchedPlans = (await getData()).plans
+        fetchedPlans = await getData()
     } catch (e) {
         console.log('Error!')
         console.log(e)
@@ -33,11 +31,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         </div>
         `
 
-        if (plan.workouts.length === 3) {
-            threeWeekPrograms.appendChild(planDiv)
-        } else if (plan.workouts.length === 2) {
-            twoWeekPrograms.appendChild(planDiv)
-        }
+        // sorts plans by workouts.length in different divs
+        document.querySelector(`.plan-list-${plan.workouts.length}`).appendChild(planDiv)
 
         plan.workouts.forEach(workout => {
 
